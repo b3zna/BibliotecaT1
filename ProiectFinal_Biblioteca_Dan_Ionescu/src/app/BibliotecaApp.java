@@ -44,32 +44,11 @@ public class BibliotecaApp {
 		Biblioteca biblioteca = getBibliotecaPopulata();
 		
 		
-//		biblioteca.catalogMedia();
-//		
-//		biblioteca.consultaMedia(1);
-//		biblioteca.elibereazaMedia(1);
-		
-//		biblioteca.catalogPublicatii();
-//		biblioteca.publicatiiDisponibile();
-		
-//		biblioteca.consultarePublicatieDupaAutor("Jonathan Coe");
-//		biblioteca.consultarePublicatieDupaCategorie("Fictiune");
-		//biblioteca.imprumutaPublicatie(1, LocalDate.of(2017, 12, 20));
-		
-//		biblioteca.imprumutaPublicatie(1, LocalDate.of(2017, 12, 20));
-//		biblioteca.imprumutaPublicatie(3, LocalDate.of(2017, 12, 1));
-//		biblioteca.publicatiiImprumutate();
-//		biblioteca.returneazaPulblicatia(1, LocalDate.of(2018, 12, 24));
-//		biblioteca.returneazaPublicatie(3, LocalDate.of(2018, 2, 2));
-//		
-//		biblioteca.returneazaPublicatie(2, LocalDate.of(2018, 3, 1));
-//		biblioteca.imprumutaPublicatie(2, LocalDate.of(2018, 1, 1));
-//		biblioteca.returneazaPublicatie(2, LocalDate.of(2018, 3, 1));
 		
 		//Cazul 1
-//		biblioteca.catalogPublicatii();
-//		biblioteca.imprumutaPublicatie(3, LocalDate.of(2017, 12, 20));
-//		biblioteca.returneazaPublicatie(3, LocalDate.of(2018, 1, 3));
+		biblioteca.catalogPublicatii();
+		biblioteca.imprumutaPublicatie(3, LocalDate.of(2017, 12, 20));
+		biblioteca.returneazaPublicatie(3, LocalDate.of(2018, 1, 3));
 		
 		//Cazul 2
 //		biblioteca.imprumutaPublicatie(3, LocalDate.of(2017, 12, 20));
@@ -96,16 +75,16 @@ public class BibliotecaApp {
 //		biblioteca.imprumutaPublicatie(2, LocalDate.now());
 		
 		//Cazul 6
-		biblioteca.consultarePublicatieDupaAutor("Neagu Djuvara");
-		biblioteca.imprumutaPublicatie(10, LocalDate.now());
-		biblioteca.returneazaPublicatie(11, LocalDate.now());
+//		biblioteca.consultarePublicatieDupaAutor("Neagu Djuvara");
+//		biblioteca.imprumutaPublicatie(10, LocalDate.now());
+//		biblioteca.returneazaPublicatie(11, LocalDate.now());
 		
 		//Cazul 7
 //		biblioteca.imprumutaPublicatie(1, LocalDate.of(2017, 12, 10));
 //		biblioteca.returneazaPublicatie(1, LocalDate.of(2017, 1, 3));
 //		biblioteca.imprumutaPublicatie(2, LocalDate.of(2018, 1, 1));
 //		biblioteca.returneazaPublicatie(2, LocalDate.of(2018, 3, 1));
-		
+//		
 		//Cazul 8
 //		biblioteca.catalogMedia();
 //		biblioteca.consultaMedia(10);

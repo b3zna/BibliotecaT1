@@ -9,6 +9,4 @@ public interface Imprumutabil {
 	void imprumuta(LocalDate dataImprumut) throws Exception;
 	void returneaza(LocalDate dataRetur) throws NuImprumutatException;
 	double calculPenalizare(LocalDate dataRetur);
-
-
 }

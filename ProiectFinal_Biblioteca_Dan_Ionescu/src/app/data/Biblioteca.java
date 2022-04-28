@@ -3,6 +3,8 @@ package app.data;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import app.data.Exceptii.IndisponibilException;
 import app.data.Exceptii.NuImprumutatException;
 
 public class Biblioteca {
@@ -71,9 +73,11 @@ public class Biblioteca {
 			publicatii.get(id - 1).imprumuta(dataImprumut);
 			
 			System.out.println("Publicatia " + id + " a fost imprumutata.");
-		} catch (Exception e) {
-			//e.printStackTrace();
-			//System.out.println("lol e deja data");
+		} catch(IndisponibilException i) {
+			System.out.println(i.getMessage());
+		}
+		
+		catch (Exception e) {
 			System.out.println("Publicatia " + id + " nu a fost gasita!");			
 		}
 		
@@ -120,11 +124,8 @@ public class Biblioteca {
 	
 	public void consultaMedia(int id) {		
 		
-		try {
-			
+		try {			
 		this.media.get(getMediaId(id)).consulta();
-		//this.mediaList.get(id - 1).disponibil = false;
-		//System.out.println("Media " + this.media.get(id - 1) + " este in consultare.");
 		System.out.println("Media " + id + " este in consultare.");
 		
 		} catch(IndexOutOfBoundsException i) {
@@ -142,11 +143,4 @@ public class Biblioteca {
 			System.out.println("Media " + id + " nu a fost gasita!");
 		} 				
 	}
-	
-	
-	
-	
-	
-	
-
 }

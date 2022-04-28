@@ -4,10 +4,6 @@ public abstract class Media extends Item implements Consultabil {
 	
 	protected String suport;
 	
-	public Media(String suport) {
-		this.suport = suport;
-	}
-	
 
 	@Override
 	public void consulta() {

@@ -6,7 +6,6 @@ public class AlbumMuzica extends Media {
 	protected String gen;
 	
 	public AlbumMuzica(String suport, String artist, String titlu, String gen) {
-		super(suport);
 		
 		this.suport = suport;
 		this.artist = artist;

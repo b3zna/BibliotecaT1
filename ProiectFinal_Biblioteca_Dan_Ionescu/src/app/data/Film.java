@@ -9,7 +9,6 @@ public class Film extends Media {
 	protected String regizor;
 	
 	public Film(String suport, String titlu, int an, String gen, String regizor) {
-		super(suport);
 		
 		this.suport = suport;
 		this.titlu = titlu;

@@ -43,6 +43,8 @@ public class BibliotecaApp {
 		
 		Biblioteca biblioteca = getBibliotecaPopulata();
 		
+		System.out.println("LOL new branch!");
+		
 		
 		
 		//Cazul 1
